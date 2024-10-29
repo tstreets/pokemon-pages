@@ -9,12 +9,17 @@ export default function Home() {
     if (pokeData.totalPokemonCount === 0) {
       pokeData.getNumberOfPokemon();
     }
+    if (!pokeData.randomPokemon.length) pokeData.getRandomPokemon();
   }, [pokeData]);
 
-  console.log(pokeData);
+  const pokemonImages = pokeData.randomPokemon.map(function (pokemonData) {
+    const imgUrl = pokeData.getImageFromPokemonData(pokemonData);
+    return <img key={`pokemon-image-${imgUrl}`} src={imgUrl} />;
+  });
   return (
     <main>
       <h1>Home</h1>
+      {pokemonImages}
     </main>
   );
 }
