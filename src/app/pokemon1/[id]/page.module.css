@@ -1,0 +1,120 @@
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pokemonCard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .mainImage {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .info {
+    margin-top: 20px;
+  }
+  
+  .stats {
+    margin: 20px 0;
+  }
+  
+  .statBar {
+    position: relative;
+    background-color: #f0f0f0;
+    height: 25px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .statName {
+    text-transform: capitalize;
+    z-index: 1;
+    flex: 1;
+  }
+  
+  .statValue {
+    z-index: 1;
+    margin-left: 10px;
+  }
+  
+  .statFill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #caa7de;
+    opacity: 0.7;
+    transition: width 0.3s ease;
+  }
+  
+  .types {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .typeTag {
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .abilities {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .ability {
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    text-transform: capitalize;
+  }
+  
+  .measurements {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .description {
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+  
+  .favoriteButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #caa7de;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .favoriteButton:hover {
+    background-color: #b68ac7;
+  }
+  
+  
