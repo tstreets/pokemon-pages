@@ -16,7 +16,7 @@ export default function FavoritesPage() {
             key={pokemon.id}
             id={pokemon.id}
             name={pokemon.name}
-            img={pokemon.img} // Use the directly stored image URL
+            img={pokemon.img} 
             types={pokemon.types || []}
             isFavorite={true}
             onFavoriteClick={() => pokeApi.toggleFavorite(pokemon)}

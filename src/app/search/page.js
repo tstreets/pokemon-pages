@@ -24,7 +24,7 @@ export default function SearchPage() {
             const res = await fetch(pokemon.url);
             const pokemonData = await res.json();
             
-            // Fetch species data for habitat and egg group information
+            
             const speciesRes = await fetch(pokemonData.species.url);
             const speciesData = await speciesRes.json();
             

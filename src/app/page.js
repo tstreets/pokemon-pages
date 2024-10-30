@@ -25,8 +25,8 @@ export default function Home() {
         name={quickInfo.name}
         img={quickInfo.img}
         types={quickInfo.types}
-        isFavorite={pokeData.isFavorite(quickInfo.id)} // Add this line
-        onFavoriteClick={() => pokeData.toggleFavorite(pokemon)} // Add this line
+        isFavorite={pokeData.isFavorite(quickInfo.id)}
+        onFavoriteClick={() => pokeData.toggleFavorite(pokemon)} 
       />
     );
   });
