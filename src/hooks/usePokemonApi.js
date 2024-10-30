@@ -46,10 +46,20 @@ export function PokemonProvider({ children }) {
     });
   }
 
+  function getPokemonQuickInfo(pokeData) {
+    return {
+      name: pokeData.name,
+      id: pokeData.id,
+      img: pokeData.sprites.front_default,
+      types: pokeData.types,
+    };
+  }
+
   const pokemonValues = {
     ...pokemonState,
     getNumberOfPokemon,
     getRandomPokemon,
+    getPokemonQuickInfo,
   };
 
   return (

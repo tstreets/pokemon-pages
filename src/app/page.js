@@ -16,16 +16,22 @@ export default function Home() {
     }
   }, [pokeData]);
 
-  console.log(pokeData.randomPokemon);
+  const randomPokemonListJsx = pokeData.randomPokemon.map(function (pokemon) {
+    const quickInfo = pokeData.getPokemonQuickInfo(pokemon);
+    return (
+      <PokemonCard
+        key={`poke-card-${quickInfo.id}`}
+        name={quickInfo.name}
+        img={quickInfo.img}
+        types={quickInfo.types}
+      />
+    );
+  });
 
   return (
     <main className={homeStyles.mainContent}>
       <h1>POKEMON SHOWCASE</h1>
-      <section>
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-      </section>
+      <section>{randomPokemonListJsx}</section>
     </main>
   );
 }
