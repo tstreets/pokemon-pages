@@ -11,9 +11,13 @@ export default function Home() {
     if (pokeData.totalPokemonCount === 0) {
       pokeData.getNumberOfPokemon();
     }
+    if (!pokeData.randomPokemon.length) {
+      pokeData.getRandomPokemon(3);
+    }
   }, [pokeData]);
 
-  console.log(pokeData);
+  console.log(pokeData.randomPokemon);
+
   return (
     <main className={homeStyles.mainContent}>
       <h1>POKEMON SHOWCASE</h1>
