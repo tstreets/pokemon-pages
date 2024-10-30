@@ -1,0 +1,59 @@
+
+.searchContainer {
+  padding: 20px;
+  text-align: center;
+}
+.card{
+    background-color: purple;
+}
+
+.searchForm {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.searchInput {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #caa7de;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.searchSelect {
+  padding: 10px;
+  border: 2px solid #caa7de;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: #caa7de;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.searchButton:hover {
+  background-color: #b894cc;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+.pokemonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  
+}

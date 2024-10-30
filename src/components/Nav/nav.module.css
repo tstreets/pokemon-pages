@@ -1,6 +1,6 @@
 .mainNav {
   height: 60px;
-  background-color: #c391ec;
+  background: linear-gradient(#cc83cd, #e2bad7);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -12,6 +12,6 @@
 
 .mainNav li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 32px;
 }
