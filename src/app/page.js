@@ -1,6 +1,8 @@
 "use client";
 import usePokemonApi from "@/hooks/usePokemonApi";
 import { useEffect } from "react";
+import homeStyles from "./page.module.css";
+import PokemonCard from "@/components/Pokemon/PokemonCard";
 
 export default function Home() {
   const pokeData = usePokemonApi();
@@ -13,8 +15,13 @@ export default function Home() {
 
   console.log(pokeData);
   return (
-    <main>
-      <h1>Home</h1>
+    <main className={homeStyles.mainContent}>
+      <h1>POKEMON SHOWCASE</h1>
+      <section>
+        <PokemonCard />
+        <PokemonCard />
+        <PokemonCard />
+      </section>
     </main>
   );
 }
